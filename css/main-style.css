@@ -1,0 +1,232 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Quicksand:wght@300..700&display=swap');
+@import url("../fonts/stylesheet.css");
+
+@import url("all.css");
+
+body 
+{
+	background-color:  #f0f4f8; 
+	color: #666666 ;
+	font-family: "Roboto",Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;
+	font-size: 16px;
+	margin: 0   
+}
+.font-subtitle1
+{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  	font-weight: 600;
+  	font-style: normal;
+	color: #666666;
+}
+
+h1{ 
+		font-size: 45px;
+        background: #007BFF;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	 -webkit-text-stroke-width: 0.5px;
+ 	 -webkit-text-stroke-color:rgba(0,0,0,0.5);
+	}
+h2{ font-size: 40px}
+h3{ font-size: 36px}
+h4{ font-size: 24px}
+h5{ font-size: 20px}
+h6{ font-size: 18px}
+h1,h2,h3,h4,h5,h6, a,button{ margin-bottom: 0; margin-top: 0;
+font-family: 'Poppins', sans-serif;}
+a{ 
+	color: #4a90e2;
+	text-decoration:none;
+	font-weight: 700
+}
+a:hover 
+{
+	color: #50e3c2;
+}
+@font-face
+{
+	font-family: f-tron;
+	src: url( "../font/Coolvetica Rg.otf")
+}
+
+.aimuonf-tron {
+	font-family: 'Poppins', sans-serif;   
+	font-size: 45px;
+	font-weight: 700;
+	color: #007BFF; 
+	text-transform: uppercase;
+	border: none;
+	box-shadow: none;
+
+}
+	
+
+.container-fluid
+{
+	width: 100%; padding-left: 16px; padding-right: 16px
+}
+
+.container
+{
+	width:95%; margin: auto
+}
+
+@media (min-width:600px)
+{
+	.container
+	{
+		width:90%; margin: auto
+	}
+	
+}
+
+@media (min-width:1000px)
+{
+	.container
+	{
+		width:80%; margin: auto
+	}
+}
+
+.col-1{ width: 8.3333%; }
+.col-2{ width:16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width:41.66%}
+.col-6{ width: 50%}
+.col-7{ width:58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px solid blue
+}
+*{ box-sizing: border-box}
+.img-100{width: 100%}
+.row 
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.card
+{ 
+	background: white;
+	border-radius: 15px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px
+}
+
+footer
+{
+	background: #ccc
+}
+
+.text-primary { color: #4a90e2; } 
+.text-secondary { color: #50e3c2; } 
+
+.text-light{ color: #DDDDDD }
+.text-dark{color: #323232 }
+
+.bg-primary { background-color: #4a90e2; }
+.bg-secondary { background-color: #50e3c2; }
+.bg-light{background-color:#DDDDDD}
+.bg-dark {background-color:#323232}
+
+.btn-primary
+{ 
+	background-color: #4a90e2;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-primary:hover{
+	background-color:#50e3c2;
+	color: white
+}
+
+.btn-secondary
+{ 
+	background-color: #50e3c2;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-secondary:hover{
+	background-color: #4a90e2;
+	color: white
+}
+
+
+ul.menu
+{
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content:flex-start
+}
+ul.menu li a
+{
+	padding: 8px 16px;	
+	margin: 2px;
+	color:#666666; 
+	letter-spacing: 0.08rem;
+	display: block
+}
+ul.menu li a:hover
+{
+	background-color:#4a90e2;
+	border-bottom: 2px solid #666;
+	color: #50e3c2;
+}
+ul.menu li
+{
+	position: relative
+}
+ul.menu .dropdown-menu
+{
+	width: 200px;
+	border: 1px solid green;
+	position: absolute; 
+	left: -10%;
+	top: 150%;
+	z-index: 9999;
+	background: #eee;
+	opacity: 0;
+	transition: all 1s ;
+	
+	}
+
+ul.menu .dropdown-menu a
+{
+	display:  inline-block;
+}
+.banner{
+	position: relative
+}
+ul.menu li:hover >.dropdown-menu
+{
+	left: 0;
+	top: 85%;
+	opacity: 1
+	
+}
+.banner-caption {  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  color: #666; 
+  background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 8px;
+}
