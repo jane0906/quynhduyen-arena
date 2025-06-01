@@ -104,7 +104,7 @@ a:hover
 [class*="col-"]
 {
 	padding: 15px;
-	border: 1px solid blue
+	border: 1px solid note
 }
 *{ box-sizing: border-box}
 .img-100{width: 100%}
